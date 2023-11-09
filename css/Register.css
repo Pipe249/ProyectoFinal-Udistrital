@@ -46,6 +46,9 @@ body{
     font-weight: 700; 
     color: #FFFFFF;  
 }
+.menu ul li button:hover{
+    cursor: pointer;
+}
 .menu ul li a{
     color: #FFFFFF;
 }
@@ -79,6 +82,9 @@ body{
     width: 60%;
     color: #FFFFFF;
 }
+.form button:hover{
+    cursor: pointer;
+}
 .form input{
     background-color: transparent;
     border-radius: 20px;
@@ -108,6 +114,10 @@ body{
     color: #FFFFFF;
     margin: 5px;
 }
+.footer-login-card button:hover{
+    cursor: pointer;
+}
+
 
 .abrirMenu{
     display: none;

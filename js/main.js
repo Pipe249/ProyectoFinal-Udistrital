@@ -11,12 +11,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (ButtonRegister) {
           ButtonRegister.addEventListener("click", function() {
-              // Tu lógica aquí al hacer clic en el botón de registro
               console.log("¡Botón de registro clicado!");
               window.location.href = "Registro.html";
-              // Puedes redirigir a la página de registro u otras acciones
           });
       }
     })
     .catch(error => console.log(error));
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const RegisterButton = document.getElementById("RegisterButton");
+
+    if(RegisterButton) {
+        RegisterButton.addEventListener("click", function() {
+            window.location.href = "Registro.html"
+        })
+    }
+    
 });
