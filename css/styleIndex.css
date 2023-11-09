@@ -24,10 +24,13 @@ body{
     border-radius: 10px;
     width: 80%;
 }
-#ListMenu{
+.ListaMenu{
     display: flex;
     list-style: none;
     justify-content: flex-end;
+}
+#ButtonClose{
+    display: none;
 }
 
 .menu ul li {
@@ -88,6 +91,8 @@ body{
 }
 .form input::placeholder{
     color: #FFFFFF;
+    font-family: "Font Awesome 5 Free";
+    text-align: center;
 }
 .footer-login-card{
     margin-top: 2rem;
@@ -106,3 +111,53 @@ body{
     margin: 5px;
 }
 
+.abrirMenu{
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrirMenu{
+        display: block;
+    }
+    .ListaMenu button{
+        display: block;
+    }
+    #ButtonClose{
+        display: flex;
+    }
+    .ListaMenu{
+        visibility: hidden;
+        opacity: 0;
+        display: inline-block;
+        align-items: center;
+        background-color: aqua;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    body{
+        background-image: url('../img/SignInResponsive.png');
+    }
+    #Logo{
+        display: none;
+    }
+    .contenedorInicioSesion{
+        background-color: transparent;
+        width: 80%;
+        height: 25rem;
+    }
+    .form input{
+        width: 80%;
+        border-color: #112E40;
+    }
+    .form button{
+        margin-top: 4rem;
+    }
+    .footer-login-card{
+        margin-top: 0%;
+    }
+  
+}
